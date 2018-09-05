@@ -1,0 +1,93 @@
+#game-content {
+    margin: 70px 0px 0px 0px;
+    
+}
+body {
+    background-image: url("../images/background-intense.jpg");
+    color: #FFD700;
+    font-family: 'Bangers', cursive;
+}
+
+.character-img {
+    width: 150px;
+    height: 150px;
+    border: rgb(242, 79, 79) thick solid;
+    border-radius: 12px;
+    margin: 5px;
+}
+
+.character-img:hover {
+    cursor: pointer;
+    box-shadow: 7px 7px 10px rgb(89, 241, 255);
+    border: rgb(36, 226, 153) thick groove;
+    transition-duration:  0.35s;
+}
+
+.sec-title{
+    text-shadow: 2px 2px 4px #000000;
+    margin: 25px 0px 0px 0px;
+    padding: 0px;
+}
+
+.character-card {
+   position:relative;
+   text-shadow: 2px 2px 4px #000000;
+    
+}
+
+/* positioning of character names */
+
+#obi-n {
+    position: absolute;
+    top: 35px;
+    left: 23px;
+}
+
+#maul-n {
+    position: absolute;
+    top: 35px;
+    left: 15px;
+}
+
+#luke-n {
+    position: absolute;
+    top: 153px;
+    left: 15px;
+}
+
+#vader-n {
+    position: absolute;
+    top: 35px;
+    left: 15px;
+
+}
+
+/* Positioning of Character's health points */
+
+#kenobiPower {
+    position: absolute;
+    top:140px;
+    right: 160px;
+    font-size: 25px;
+}
+
+#maulPower {
+    position: absolute;
+    top:140px;
+    right: 160px;
+    font-size: 25px;
+}
+
+#lukePower {
+    position: absolute;
+    top: 32px;
+    right: 67px;
+    font-size: 25px;
+}
+
+#vaderPower {
+    position: absolute;
+    top:140px;
+    right: 67px;
+    font-size: 25px;
+}

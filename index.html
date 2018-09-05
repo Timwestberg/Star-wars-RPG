@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Game| StarWars
+    </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" id="nav-z">
+        <img src="assets/images/LightSaber-Icon.jpg" class="game-icon" alt=" Crystal icon" height="42" width="42">
+        <a class="navbar-brand" href="#">&nbsp;StarWars Faceoff</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Portfolio
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Me</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        Games
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="index.html">StarWars Faceoff</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Rock Paper Scissors</a>
+                        <a class="dropdown-item" href="#">Hangman</a>
+                        <a class="dropdown-item" href="#">Master Collector</a>
+                        <a class="dropdown-item" href="#">FormulaGen</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container" id="game-content">
+
+
+        <div class="row">
+            <div class="col-3">
+                <div id="obi-wan" class="character-card">
+                   <h6 id="obi-n">Obi-Wan Kenobi</h6> 
+                    <br>
+                    <img class="character-img" src="assets/images/Obi-Wan.jpg" class="img-fluid" alt="Responsive image">
+                    <span id="kenobiPower">500</span>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div id="darth-maul" class="character-card">
+                    <h6 id="maul-n">Darth Maul</h6>
+                    <br>
+                    <img class="character-img" src="assets/images/Darth Maul.jpg" class="img-fluid" alt="Responsive image">
+                    <span id="maulPower">300</span>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div id="luke-skywalker" class="character-card">
+                    <h6 id="luke-n">Luke Skywalker</h6>
+                    <br>
+                    <img class="character-img" src="assets/images/Luke-skywalker.png" class="img-fluid" alt="Responsive image">
+                    <span id="lukePower">400</span>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div id="darth-vader" class="character-card">
+                    <h6 id="vader-n">Darth Vader</h6>
+                    <br>
+                    <img class="character-img" src="assets/images/Darth-Vader.jpg" class="img-fluid" alt="Responsive image">
+
+                    <span id="vaderPower">1000</span>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-4">
+                <h1 class="sec-title">Your Character</h1>
+                <span id="chosen-char"></span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <h1 class="sec-title">Enemies to attack!</h1>
+                <span id="enemy1"></span>
+                <span id="enemy2"></span>
+                <span id="enemy3"></span>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-4">
+                <h1 class="sec-title">Fight Section</h1>
+                <span id="defending"></span>
+                <h1 class="sec-title">Defender</h1>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="assets/javascript/game.js"></script>
+</body>
+
+</html>
