@@ -13,7 +13,7 @@ body {
     height: 150px;
     border: rgb(242, 79, 79) thick solid;
     border-radius: 12px;
-    margin: 5px;
+    margin: 0px 5px 0px 0px;
 }
 
 .character-img:hover {
@@ -32,8 +32,9 @@ body {
 .character-card {
    position:relative;
    text-shadow: 2px 2px 4px #000000;
-    
+      
 }
+
 
 /* positioning of character names */
 
@@ -51,7 +52,7 @@ body {
 
 #luke-n {
     position: absolute;
-    top: 153px;
+    top: 140px;
     left: 15px;
 }
 
@@ -66,28 +67,28 @@ body {
 
 #kenobiPower {
     position: absolute;
-    top:140px;
-    right: 160px;
-    font-size: 25px;
+    top: 130px;
+    left: 15px;
+
 }
 
 #maulPower {
     position: absolute;
-    top:140px;
-    right: 160px;
-    font-size: 25px;
+    top: 130px;
+    left: 15px;
+
 }
 
 #lukePower {
     position: absolute;
-    top: 32px;
-    right: 67px;
-    font-size: 25px;
+    top:35px;
+    left: 110px;
+ 
 }
 
 #vaderPower {
     position: absolute;
-    top:140px;
-    right: 67px;
-    font-size: 25px;
+    top: 130px;
+    left: 110px;
+
 }

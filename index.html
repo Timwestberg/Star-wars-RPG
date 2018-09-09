@@ -18,7 +18,7 @@
 <body>
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" id="nav-z">
         <img src="assets/images/LightSaber-Icon.jpg" class="game-icon" alt=" Crystal icon" height="42" width="42">
-        <a class="navbar-brand" href="#">&nbsp;StarWars Faceoff</a>
+        <a class="navbar-brand" href="#">&nbsp;StarWars RPG</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
             aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -55,41 +55,45 @@
     <div class="container" id="game-content">
 
 
-        <div class="row">
-            <div class="col-3">
-                <div id="obi-wan" class="character-card">
-                   <h6 id="obi-n">Obi-Wan Kenobi</h6> 
+        <div class="row" id="character-Sel">
+
+            <div class="col-xs-3" id="obi-wan">
+                <div class="character-card">
+                    <h6 id="obi-n">Obi-Wan Kenobi</h6>
+                    <h5 id="kenobiPower">500</h5>
                     <br>
                     <img class="character-img" src="assets/images/Obi-Wan.jpg" class="img-fluid" alt="Responsive image">
-                    <span id="kenobiPower">500</span>
                 </div>
             </div>
 
-            <div class="col-3">
-                <div id="darth-maul" class="character-card">
+            <div class="col-xs-3" id="darth-maul">
+                <div class="character-card">
                     <h6 id="maul-n">Darth Maul</h6>
+                    <h5 id="maulPower">300</h5>
                     <br>
                     <img class="character-img" src="assets/images/Darth Maul.jpg" class="img-fluid" alt="Responsive image">
-                    <span id="maulPower">300</span>
+
                 </div>
             </div>
 
-            <div class="col-3">
-                <div id="luke-skywalker" class="character-card">
+            <div class="col-xs-3" id="luke-skywalker">
+                <div class="character-card">
                     <h6 id="luke-n">Luke Skywalker</h6>
+                    <h5 id="lukePower">400</h5>
                     <br>
                     <img class="character-img" src="assets/images/Luke-skywalker.png" class="img-fluid" alt="Responsive image">
-                    <span id="lukePower">400</span>
+
                 </div>
             </div>
 
-            <div class="col-3">
-                <div id="darth-vader" class="character-card">
+            <div class="col-xs-3" id="darth-vader">
+                <div class="character-card">
                     <h6 id="vader-n">Darth Vader</h6>
+                    <h5 id="vaderPower">1000</h5>
                     <br>
                     <img class="character-img" src="assets/images/Darth-Vader.jpg" class="img-fluid" alt="Responsive image">
 
-                    <span id="vaderPower">1000</span>
+
                 </div>
             </div>
         </div>
@@ -100,11 +104,12 @@
             <div class="col-4">
                 <h1 class="sec-title">Your Character</h1>
                 <span id="chosen-char"></span>
+                <button type="button" id="atkButton"class="btn btn-primary">Attack</button>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-12">
+            <div class="col-4">
                 <h1 class="sec-title">Enemies to attack!</h1>
                 <span id="enemy1"></span>
                 <span id="enemy2"></span>
@@ -115,10 +120,13 @@
         <div class="row">
             <div class="col-4">
                 <h1 class="sec-title">Fight Section</h1>
-                <span id="defending"></span>
+                <button type="button" id="atkButton"class="btn btn-primary">Attack</button>              
                 <h1 class="sec-title">Defender</h1>
+                <span id="defending"></span>
             </div>
         </div>
+
+        <div class="game-message"></div>
 
 
 
